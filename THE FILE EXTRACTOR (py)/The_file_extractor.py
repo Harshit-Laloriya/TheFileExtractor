@@ -38,6 +38,7 @@ def loc_check():
 files_location = []
 # ----------------- option menu function ------------------------
 def search_files():
+    files_location.clear()
     count = 0
     if os.path.exists(entry_box_1_data.get()) and option_menu_variable.get().strip() in list(extensions.keys()) :
         for loc,dir,l_file in os.walk(entry_box_1_data.get()):
